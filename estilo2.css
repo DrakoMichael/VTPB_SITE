@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'Bush-Script';
+    src: url('font/brushscriptregular.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Soho Pro';
+    src: url('font/soho-gothic-pro-regular.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    font-family: 'Soho Pro';
+        text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: rgb(211, 211, 211);
+}
+
+header {
+    background-color: rgb(148, 148, 148);
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    padding: 10px;
+    position: sticky;
+    justify-content: space-between; 
+    top: 0px;
+    z-index: 1;
+  }
+
+  .indice{
+    font-family: 'Bush-Script', sans-serif;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+   
+  }
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+   
+}
+
+.logo-redonda {
+    border-radius: 50%;
+    height: 50px; 
+  }
+
+i#burguer {
+    background-color: red;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-color: red;
+    color: black;
+}
+
+menu {
+    display: none;
+    background-color: red;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+   transition: background 1s;
+
+}
+
+menu > ul > li > a:hover {
+    background-color: black;
+   
+}
+
+.drop{
+    position: absolute;
+    display: none;
+    }
+
+.drop a{
+display: block;
+padding: 10px;
+text-decoration: none;
+color: white;
+}
+
+.drop > a:hover{
+background-color: black;
+}
+
+
+
+.drop-hover:hover .drop {
+    display: block;
+    background-color: red;
+    }
+
+
+    .drop-hover1:hover .drop {
+        display: block;
+        background-color: black;
+        }
+
+
+
+
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+
+.centered-text {
+    font-family: 'Bush-Script', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    color: #000000;
+    margin-top: 20px;
+}
+
+
+
+.whatsapp-button {
+    position: fixed; /* Botão permanece visível enquanto rola */
+    bottom: 20px; /* Distância da parte inferior da página */
+    right: 20px; /* Distância do lado direito da página */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    width: 60px; /* Tamanho do botão */
+    height: 60px;
+    border-radius: 50%; /* Deixa o botão arredondado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+    overflow: hidden; /* Remove qualquer conteúdo que ultrapasse o botão */
+}
+
+.whatsapp-button img {
+    width: 100%; /* Faz a imagem ocupar todo o botão */
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem fique proporcional */
+    transition: transform 0.3s; /* Suaviza o efeito de hover */
+}
+
+.whatsapp-button:hover img {
+    transform: scale(1.1); /* Aumenta ligeiramente o botão no hover */
+}
+
+
+
+.logo, .social-icons {
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.justificado{
+    text-align: justify;
+}
+
+
+
+footer {
+    background-color: rgb(0, 87, 166);
+    margin-top: 10px;
+       }
+
+.centered-text4 {
+    font-family: 'Soho Pro';
+    text-align: center;
+    font-size: 1rem;
+    color: #f8f8f8;
+    font-weight: normal;
+    font-style: normal;
+      }
+
+footer h1{
+    color:#f8f8f8;
+    font-family: 'Soho Pro';
+    font-size: 0.8rem;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    padding: 18px;
+}
+
+footer a{
+    color:#f8f8f8;
+    
+               }
+
+footer h1 img{
+ width: 25px; 
+height: 25px;
+}
+
+
+.footer-end {
+    padding: 10px;
+    background-color:black;
+    margin-top: 10px;
+       }
+
+.centered-fend {
+    font-family: 'Soho Pro';
+    text-align: center;
+    font-size: 1rem;
+    color: #f8f8f8;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none; 
+     }
+
+.centered-fend > a{
+    text-decoration: none;
+}
+
+
+.map{
+
+    width: 60%;
+    height: 100%;
+    flex: 1.5rem;
+    object-fit: cover;
+    display: center;
+}
+
+
+.teste1{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; /* Para centralizar o texto */ 
+    width: 4%;
+    height:4%; 
+    position: center;
+}

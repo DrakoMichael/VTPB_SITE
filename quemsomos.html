@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG &#8211; Voluntários Torcendo Pro Bem</title>
+    <link rel="icon" href="img/logo-redonda1.png" type="img/image.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo2.css">
+    <link rel="stylesheet" href="responsivo2.css">
+
+
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <div class="header">
+            <h1 class="logo">
+              <a href="home.html">
+                <img src="img/logo.png" class="logo-redonda" alt="Logo">
+              </a>
+            </h1>
+            <h1 class="indice">Voluntários<br> Torcendo Pro Bem</h1>
+            <div class="social-icons"><a href="https://www.facebook.com/voluntariosprobem/?locale=pt_BR">
+                <img src="./img/facebookbr.svg" alt="Facebook" width="40" height="40"> </a>
+              <a href="https://www.instagram.com/voluntariosprobem/">
+                <img src="./img/instagrambr.svg" alt="Instagram" width="40" height="40"> </a>
+            </div>
+        </div>
+
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="quemsomos.html" data-page="home">Quem Somos</a></li>
+                    <li class="drop-hover"><a href="#">O que fazemos <span style="color: transparent">..</span><img src="./img/abaixo.svg" whidt="15" height="15"></a>
+                        <div class="drop">
+                            <a href="atividadesdesenvolvidas.html">Atividades Desenvolvidas</a>
+                            <a href="campanhas.html">Campanhas</a>
+                            <a href="eventos.html">Eventos</a>
+                        </div>
+                    </li>
+                    <li><a href="comoajudar.html" data-page="comoajudar">Como Ajudar</a></li>
+                     <li class="drop-hover"><a href="#"><span style="color: transparent">.......</span>Blog<span style="color: transparent">....</span><img src="./img/abaixo.svg" whidt="15" height="15"><span style="color: transparent">.......</span></a>
+                        <div class="drop">
+                            <a href="violenciadomestica.html">Violência Doméstica</a>
+                            <a href="conselhotutelar.html">Conselho Tutelar</a>
+                        </div>
+                    </li>                          
+                    <li><a href="contato.html" data-page="contato">Contato</a></li>
+                    <li><a href="administracao.html" data-page="administracao">Adminstração</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    
+     <main>
+        <section class="text1">
+            <div class="divisoria">
+                <h3 class="centered-text">“Quem Somos”</h3><br><br>
+            
+                <h3>
+                    A ONG Voluntários Torcendo pro Bem foi criada em 25 de junho de 2021. Ela está registrada como uma associação privada com atividades associativas voltadas para fins sociais, operando em São Paulo, SP. <br><br>
+        
+                    A ONG é uma organização dedicada a promover o bem-estar e a qualidade de vida de pessoas em situações vulneráveis. Com uma rede de voluntários engajados, a ONG realiza ações e projetos que buscam melhorar as condições de comunidades e indivíduos que enfrentam desafios sociais e econômicos.<br><br>
+        
+                    Os voluntários participam de uma variedade de atividades, incluindo campanhas de arrecadação, programas educacionais, eventos de inclusão e suporte psicológico. O objetivo principal é criar um impacto positivo e duradouro nas vidas das pessoas atendidas, além de fortalecer a solidariedade e a responsabilidade social. <br><br>
+        
+                    Se precisar de mais informações ou detalhes específicos sobre os projetos e como participar, entre em contato diretamente conosco.
+                </h3>
+            </div>
+        </section>
+                
+
+    </main>
+
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+   
+
+
+           
+<a href="https://wa.me/5511969026688" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+    <img src="img/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

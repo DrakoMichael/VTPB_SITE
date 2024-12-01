@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG &#8211; Voluntários Torcendo Pro Bem</title>
+    <link rel="icon" href="img/logo-redonda1.png" type="img/image.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo2.css">
+    <link rel="stylesheet" href="responsivo2.css">
+
+
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <div class="header">
+            <h1 class="logo">
+              <a href="home.html">
+                <img src="img/logo.png" class="logo-redonda" alt="Logo">
+              </a>
+            </h1>
+            <h1 class="indice">Voluntários<br> Torcendo Pro Bem</h1>
+            <div class="social-icons"><a href="https://www.facebook.com/voluntariosprobem/?locale=pt_BR">
+                <img src="./img/facebookbr.svg" alt="Facebook" width="40" height="40"> </a>
+              <a href="https://www.instagram.com/voluntariosprobem/">
+                <img src="./img/instagrambr.svg" alt="Instagram" width="40" height="40"> </a>
+            </div>
+        </div>
+
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="quemsomos.html" data-page="home">Quem Somos</a></li>
+                    <li class="drop-hover"><a href="#">O que fazemos <span style="color: transparent">..</span><img src="./img/abaixo.svg" whidt="15" height="15"></a>
+                        <div class="drop">
+                            <a href="atividadesdesenvolvidas.html">Atividades Desenvolvidas</a>
+                            <a href="campanhas.html">Campanhas</a>
+                            <a href="eventos.html">Eventos</a>
+                        </div>
+                    </li>
+                    <li><a href="comoajudar.html" data-page="comoajudar">Como Ajudar</a></li>
+                     <li class="drop-hover"><a href="#"><span style="color: transparent">.......</span>Blog<span style="color: transparent">....</span><img src="./img/abaixo.svg" whidt="15" height="15"><span style="color: transparent">.......</span></a>
+                        <div class="drop">
+                            <a href="violenciadomestica.html">Violência Doméstica</a>
+                            <a href="conselhotutelar.html">Conselho Tutelar</a>
+                        </div>
+                    </li>                          
+                    <li><a href="contato.html" data-page="contato">Contato</a></li>
+                    <li><a href="administracao.html" data-page="administracao">Adminstração</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <section class="text1">
+                <h3 class="centered-text">“Fazer o Bem faz Muito Bem!”</h3><br><br><br>
+                    
+                    <h1>
+                        Hoje quero falar sobre uma causa que carrego no coração e que precisa de nossa ajuda.<br>
+                        A <span class="trecho"> Voluntários Torcendo Pro Bem </span> está transformando vidas todos os dias, trabalhando incansavelmente para proteger o meio ambiente, resgatar animais, oferecer educação a comunidades vulneráveis etc.
+                        <br>
+                        Temos o orgulho e a dedicação de apoiar essa iniciativa e convido cada um de vocês a se juntar nessa luta.
+                        <br>
+                        Com cada contribuição, cada compartilhamento e cada gesto de apoio, podemos fazer a diferença.
+                        <br><br>
+                        Conto com vocês!<br><br>
+                        <img src="img/ong.png" alt="Descrição da imagem" style="width:100%; height:auto; border-radius: 15px;">
+
+                        <h1>Nosso local de apoio e auxilio</h1><br>
+                    </h1>
+                </div>
+<hr> <br>
+            </section>
+            
+            <article class="end-text">
+                <section class="texto3">
+                    <a href="#"><img src="./img/voluntarios.jpeg" alt="Descrição da imagem SVG" style="width:100%; height:100%; border-radius: 15px;"></a><br><br>
+        
+                </section>    
+           
+                        <section class="texto2">
+        
+                            <h1>Se você acredita que juntos podemos fazer mais, <br>
+                                venha conhecer essa causa e descubra como ajudar.<br>
+                                Vamos somar forças e fazer a diferença!<br><br>
+                            </h1>
+                                <h4>#voluntariostorcendopelobem#</h4>
+                    
+                        </section>    
+                </article>
+
+              
+
+    </main>
+
+    <footer class="footer-end">
+          
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d914.143430285376!2d-46.4989193!3d-23.5837487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce679ff2449f6d%3A0x4d5056f0913dc6f9!2sVolunt%C3%A1rios%20Torcendo%20pro%20Bem!5e0!3m2!1spt-BR!2sbr!4v1733067699781!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     <h1 class="centered-fend">VOLUNTÁRIOS TORCENDO PRO BEM<br><br>
+        Endereço: <a href="https://maps.app.goo.gl/b33Uj5ZVmBjUg7kp6">Praça Cataguarino, 181, Jd IV Centenário, São Miguel - São Paulo/SP </a><br><br>
+        </div>
+    E-mail: <a href="mailto:voluntariostorcendoprobem@gmail.com" target="_blank" rel="nooper noreferrer" >voluntariostorcendoprobem@gmail.com</a>
+</h1>    
+    </footer>
+
+
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
+
+       
+<a href="https://wa.me/5511969026688" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+    <img src="img/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+
+
+</body>
+</html>
